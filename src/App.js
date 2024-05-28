@@ -6,13 +6,13 @@ import {
   RouterProvider,
 } from "react-router-dom";
 // import Login from "./components/Login";
-import Profile from "./Pages/Profile";
+// import Profile from "./Pages/Profile";
 import Home from "./Pages/Home";
 import EmployeesAppraisal from "./Pages/EmployeesAppraisal";
 import NotFound from "./Pages/NotFound";
 import MainPageLayout from "./Pages/MainPageLayout";
-import Settings from "./Pages/Settings";
-import Dashboard from "./Pages/Dashboard";
+// import Settings from "./Pages/Settings";
+// import Dashboard from "./Pages/Dashboard";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -20,9 +20,9 @@ const router = createBrowserRouter(
       {/* <Route path="/" element={<Login />} /> */}
       <Route path="/" element={<Home />}>
         <Route index element={<EmployeesAppraisal />} />
-        <Route path="dashboard" element={<Dashboard />} />
-        <Route path="profile" element={<Profile />} />
-        <Route path="settings" element={<Settings />} />
+        <Route path="dashboard" element={<NotFound />} />
+        <Route path="profile" element={<NotFound />} />
+        <Route path="settings" element={<NotFound />} />
       </Route>
       <Route path="*" element={<NotFound />} />
     </Route>
